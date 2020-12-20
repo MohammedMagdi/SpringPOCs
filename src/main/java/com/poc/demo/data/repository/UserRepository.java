@@ -24,5 +24,5 @@ public interface UserRepository extends CrudRepository<User, Long> {
 //	@Query(value = "SELECT * FROM #{#entityName} WHERE firstName = ? firstName", nativeQuery = true)
 //	List<User> findByFirstName(@Param("firstName") String firstName);
 
-//	<T> T findByUserName(String userName, Class<T> type);
+	<T> T findByUserName(String userName, Class<T> type);
 }
