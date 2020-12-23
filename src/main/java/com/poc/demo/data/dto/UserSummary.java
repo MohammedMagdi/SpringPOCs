@@ -2,7 +2,7 @@ package com.poc.demo.data.dto;
 
 import java.io.Serializable;
 
-public class UserSummary implements Serializable {
+public class UserSummary implements Serializable, UserCustomInf {
 
 	/**
 	 * 
@@ -23,18 +23,22 @@ public class UserSummary implements Serializable {
 		this.recId = recId;
 	}
 
+	@Override
 	public String getFirstName() {
 		return firstName;
 	}
 
+	@Override
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
+	@Override
 	public String getLastName() {
 		return lastName;
 	}
 
+	@Override
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
